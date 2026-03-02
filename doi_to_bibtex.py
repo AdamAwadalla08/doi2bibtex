@@ -1,13 +1,21 @@
 """
-doi_to_bibtex.py — Convert DOI(s) to BibTeX entries
+doi_to_bibtex — Convert DOI(s) to BibTeX entries
 
 Usage examples:
-  python doi_to_bibtex.py 10.1038/nature12373
-  python doi_to_bibtex.py 10.1038/nature12373 10.1145/1327452.1327492
-  python doi_to_bibtex.py -txt my_dois.txt
-  python doi_to_bibtex.py 10.1038/nature12373 -copy
-  python doi_to_bibtex.py 10.1038/nature12373 -save output.bib
-  python doi_to_bibtex.py -txt dois.txt -copy -save refs.bib
+  doi2bib 10.1038/nature12373
+  doi2bib 10.1038/nature12373 10.1145/1327452.1327492
+  doi2bib -txt my_dois.txt
+  doi2bib 10.1038/nature12373 -c
+  doi2bib 10.1038/nature12373 -copy
+  doi2bib 10.1038/nature12373 -s output.bib
+  doi2bib 10.1038/nature12373 -save output.bib
+  doi2bib -txt dois.txt -c -s refs.bib
+
+Flags:
+  -txt <file>         Read DOIs from a text file
+  -c,  -copy          Copy output to clipboard
+  -s,  -save <file>   Save output to a .bib or .txt file
+  -h,  --help         Show this help message
 """
 
 import sys
