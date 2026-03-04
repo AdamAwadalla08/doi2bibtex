@@ -55,7 +55,7 @@ doi2bib -txt dois.txt 10.1016/j.jsv.2024.118925 -c -s refs.bib
 https://doi.org/10.1016/j.addma.2023.103505
 
 # Comma-separated also works
-10.1016/j.cell.2020.01.001, 10.1126/science.abc1234
+10.1016/j.ijfatigue.2015.03.007, 10.1080/13588265.2013.825366
 ```
 
 ## Notes
