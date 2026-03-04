@@ -23,34 +23,34 @@ After installing, the `doi2bib` command is available globally.
 doi2bib 10.1016/S0021-9258(19)52451-6
 
 # Full DOI URL works too
-doi2bib https://doi.org/10.1016/S0021-9258(19)52451-6
+doi2bib https://doi.org/10.1016/j.ymssp.2025.112949
 
 # Multiple DOIs (space or comma separated)
-doi2bib 10.1038/nature12373 10.1145/1327452.1327492
-doi2bib 10.1038/nature12373,10.1145/1327452.1327492
+doi2bib 10.1016/j.ymssp.2020.107141 10.1016/j.ymssp.2020.107144
+doi2bib 10.1016/j.ymssp.2020.107141,10.1016/j.ymssp.2020.107144
 
 # Read DOIs from a text file
 doi2bib -txt my_dois.txt
 
 # Copy result to clipboard
-doi2bib 10.1038/nature12373 -c
+doi2bib 10.1016/j.ymssp.2020.107142 -c
 doi2bib 10.1038/nature12373 -copy
 
 # Save to a .bib file (appends) or .txt file (overwrites)
-doi2bib 10.1038/nature12373 -s refs.bib
-doi2bib 10.1038/nature12373 -save refs.bib
+doi2bib 10.1016/j.ymssp.2021.107692 -s refs.bib
+doi2bib 10.1016/j.ymssp.2024.111602 -save refs.bib
 
 # Mix and match
-doi2bib -txt dois.txt 10.1038/extra -c -s refs.bib
+doi2bib -txt dois.txt 10.1016/j.jsv.2024.118925 -c -s refs.bib
 ```
 
 ## Text file format
 
 ```
 # My references (lines starting with # are ignored)
-10.1038/nature12373
+10.1016/j.jsv.2024.118381
 10.1145/1327452.1327492
-https://doi.org/10.1109/5.771073
+https://doi.org/10.1016/j.addma.2023.103505
 
 # Comma-separated also works
 10.1016/j.cell.2020.01.001, 10.1126/science.abc1234
