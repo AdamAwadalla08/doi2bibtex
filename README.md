@@ -1,6 +1,8 @@
 # doi2bibtex
 
 Convert DOI numbers or URLs to BibTeX entries — from the command line.
+> [!IMPORTANT]
+> For Windows users, your Python scripts must be on PATH for this to work from command line anywhere.
 
 ## Install
 
